@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gambit Calculators</title>
+        <style>
+            #title
+            {
+                color: rgb(42, 7, 197);
+                text-align: center;
+            }
+            #subtitle 
+            {
+                text-align: center;
+                position: relative;
+                top: -20px;
+                font-size: medium;
+            }
+
+
+            #sttar
+            {
+                color:rgb(163, 61, 61);
+                top: 10px;
+                left: 9vw;
+            }
+            #targetinput
+            {
+                margin: auto;
+                left: 8vw;
+            }
+            .TargetCalc
+            {
+                text-align: left;
+                position: relative;
+                left: 5vw;
+            }
+            .todds
+            {
+                text-align: left;
+                position: relative;
+                left: 4.5vw;
+                top: -2vw;
+            }
+            #todds2
+            {
+                left: 6.5vw;
+            }
+            #tm1t
+            {
+                left: 5.5vw;
+            }
+            #tm2t
+            {
+                top: -34px;
+                left: 12.4vw;
+            }
+            .tmt
+            {
+                position: relative;
+                color:rgb(163, 61, 61);
+            }
+            .bets
+            {
+                color:rgb(61, 160, 163);
+                
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1 id="title">Gambit Calculators</h1>
+        <p id="subtitle">Your source for all your Gambit math needs.</p>
+
+        <h2 class="TargetCalc" id=targeth><br><br>Target Calculator</h2>
+        <p class="TargetCalc" id="sttar">Target</p>
+        <input class="TargetCalc" id="targetinput" onkeyup = targetinputfunc(this) size="6" type="text" value="">
+        <p class="tmt" id="tm1t">Team 1</p>
+        <p class="tmt" id="tm2t">Team 2</p>
+        <input class="todds" id="todds1" onkeyup = todds1func(this) size="6" type="text" value="">
+        <input class="todds" id="todds2" onkeyup = todds2func(this) size="6" type="text" value="">
+        <p class="bets" id="tout">Bet on team 1:</p>
+        <p id="tbet1"></p>
+        <p class="bets" id="tout2">Bet on team 2:</p>
+        <p id="tbet2"></p>
+        <p class="bets" id="tout2">Profit:</p>
+        <p id="toutcomeprof"></p>
+        
+        <h3 id="targetoutput"></h3>
+        <script src="GW.js">
+        </script>
+    </body>
+</html>
